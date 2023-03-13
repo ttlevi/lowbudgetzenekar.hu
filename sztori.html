@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+	<HEAD>
+		<link rel="stylesheet" href= "style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+		<meta name="author" content="Tahi-Tóth Levente">
+		<meta name ="description" content="A LowBudget zenekar hivatalos weboldala">
+
+		<title>LowBudget - Sztori</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicon/site.webmanifest">
+		
+		<script src="./scripts.js"></script>
+
+		<script src="./jquery-3.6.0.js"></script>
+		<script src="./fotorama-4.6.4/fotorama.js"></script>
+		<link href="./fotorama-4.6.4/fotorama.css" rel="stylesheet">
+	</HEAD>
+	<BODY>
+		<div class="container">
+			<div class="fej_container">
+				<div class="fejkep">
+					<div class="logobox">
+						<img src="./img/logo_white_transp.png" alt="LB logo" class="logo">
+					</div>
+					<div class="fejjobb">
+						<img src="./img/borito1.png" alt="Borítókép" class="borito">
+						<div class="lboff"><p>ZENEKAR</p></div>
+					</div>
+				</div>
+				<nav id="sticky_desk" class="nav_desk"> <!--kétféle nav menü van, a mobilos legördülés megoldása miatt-->
+					<ul>
+						<li><a href="index.html"><h2>Főutca</h2></a></li>
+						<li><a class="active" href="#"><h2>Sztori</h2></a></li>
+						<li><a href="muvek.html"><h2>Művek</h2></a></li>
+						<li><a href="emlekek.html"><h2>Galéria</h2></a></li>
+						<li><a href="kontakt.html"><h2>Kontakt</h2></a></li>
+					</ul>
+				</nav>
+				<nav id="sticky_mob" class="nav_mob">
+					<input type="image" src="./img/hambicon.png" alt="Menü ikon" onclick="dropdown()" class="menugomb keplink">
+					<input type="image" src="./img/closeicon.png" alt="Menü ikon" onclick="dropdown()" class="menugomb close">
+					<ul>
+						<li><a href="index.html" class="hide"><h2>Főutca</h2></a></li>
+						<li><a class="active" href="#"><h2>Sztori</h2></a></li>
+						<li><a href="muvek.html" class="hide"><h2>Művek</h2></a></li>
+						<li><a href="emlekek.html" class="hide"><h2>Galéria</h2></a></li>
+						<li><a href="kontakt.html" class="hide"><h2>Kontakt</h2></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="main_container" id="stickmargin_main">
+				<section><p class="listen" id="stickmargin_listen">
+					<a href="https://open.spotify.com/artist/0gATikxPRj3ZdB1cPZTkTL?si=pgB0ukLGQHOxYzDfkS9BPQ" target="_blank" class="listen keplink"><img src="./img/listenon_spotify.png" alt="ListenOnSpotify" class="kep"></a>
+					<a href="https://music.youtube.com/channel/UCQ5iiArx51McOYh9ngU0nqw" target="_blank" class="listen keplink"><img src="./img/listenon_youtube.png" alt="ListenOnYoutube" class="kep"></a>
+					<br>
+					<a href="https://music.apple.com/us/artist/lowbudget/1569014794" target="_blank" class="listen keplink"><img src="./img/listenon_itunes.png" alt="ListenOnItunes" class="kep"></a>
+					<a href="https://deezer.page.link/HpLkxiAyA1T2kX536" target="_blank" class="listen keplink"><img src="./img/listenon_deezer.png" alt="ListenOnItunes" class="kep"></a>
+				</p></section>
+
+				<article class="aktual">
+					<h3 class="teljes">Mik is vagyunk?</h3>
+					<p class="teljes">
+						Valami sokadik gimis banda is voltunk egyszer, de ez nem teljesen pontos. A LowBudget sajátos élmény, egy sajátos közönségnek köszönhetően. Nekik megvannak a belső poénjaik, mozdulataik, közös élményeik, pogóik, pólóik, matricáik...mind egyedi és sajátos, ami alakítja ezt a kis közösséget. És innentől lesz évről évre, koncertről koncertre egyre varázslatosabb ez a világ.
+					</p>
+					<div class="harmad">
+						<img src="./img/sztori/akt1.webp" alt="Aktuális" class="kep">
+					</div>
+					<p class="ketharmad">
+						Bár ez a zenekar már közel 5 évet maga mögött tudhat, még mindig olyan, mint egy kisgyermek, aki nem csinál sok hasznos/maradandó dolgot, mert a napja több mint két harmadát alvással tölti. Viszont amikor felkel, akkor mindenki lelkébe egy kis boldogságot csöppent, és egy pillanatra az emberek elfelejtik, hogy a nagy homokóra, amely állandóan követ minket, milyen gyorsan is pereg.
+					</p>
+
+					<h3 class="teljes">Honnan?</h3>
+					<p class="teljes">Budai Ciszterci Szent Imre Gimnázium, 2018.
+					</p><ul class="ketharmad"><li>
+						Három osztálytárs valami osztálykiránduláson összebeszéli, hogy tudnak zenélni (és még el is hitték magukról, naszép...), és szeretnék ezt egymásnak is megmutatni, meg egyszer talán a barátaiknak is.<br>(Szereplők: Kris, Levó, Tahi)
+					</li><li>
+						Eddig oké, de nem tudnak énekelni. "Sebaj, a szomszéd osztály ofője (a.k.a. Fábián Attila Legendás Tanárúr) a világ legjobb énektanára, kérdezzük meg, tud-e valakit a béből!"<br>"Tudok!" - Fábián hangján.<br>(Szereplők: Laci)
+					</li><li>
+						"Próbáljunk egyet, nálunk szabad a garázs!" - Tahi hangján (2018 december 1., Bp.)<br>Megalakultunk! Név? LowBudget. Mert a Kris ezt mondta és neki mindig igaza van. Logót meg lehet csinálni azzal a semmirekellő digitális táblával is, amin olyan nehezen léptetődik a ppt.
+					</li></ul>
+					<div class="harmad">
+						<img src="./img/sztori/akt2.webp" alt="Aktuális" class="kep">
+					</div>
+					<div class="harmad">
+						<img src="./img/sztori/akt3.webp" alt="Aktuális" class="kep">
+					</div>
+					<ul class="ketharmad"><li>
+						Ez a srác meg mit keres itt? Mintha mondta volna, hogy van egy basszusgitárja, talán a bérmaapjától...de ki hívta próbára? (Budatéténybe...elköltöztünk Krisékhez) Nembaj, mostmár idejött, bekötjük vonalba az ének, a két gitár meg az elektromos dobszerkó mellé. Abból lesz az igazi sound.<br>(Szereplők: Miki)
+					</li><li>
+						Lacinak kisebbségi komplexusa támad. "Kevés itt a bés, és kevés a billentyűs (azaz...nincs). Úgyse tartok soha ramadant, tessék itt a spanom."<br>(Szereplők: Erik)
+					</li><li>
+						Három év eltelt. Basszusgitárosunk könnyes keretek között kilép a zenekarból. Hálásak vagyunk neki, sokat letett az asztalra, fel is játszott egy lemezt. De nem szomorkodunk sokáig, az élet megy tovább! A Stikli zenekar legendás Prius tulajdonosa innentől a mienk is! (Szereplők: Robi)
+					</li></ul>
+					<p class="teljes">Story of our little pony. És azóta, ha néha nehéz is, nem állunk meg!</p>					
+				</article>
+
+				<div class="asideok">
+					<section><p class="listen">
+						<a href="https://open.spotify.com/artist/0gATikxPRj3ZdB1cPZTkTL?si=pgB0ukLGQHOxYzDfkS9BPQ" target="_blank" class="listen keplink"><img src="./img/listenon_spotify.png" alt="ListenOnSpotify" class="kep"></a>
+						<a href="https://music.youtube.com/channel/UCQ5iiArx51McOYh9ngU0nqw" target="_blank" class="listen keplink"><img src="./img/listenon_youtube.png" alt="ListenOnYoutube" class="kep"></a>
+						<br>
+						<a href="https://music.apple.com/us/artist/lowbudget/1569014794" target="_blank" class="listen keplink"><img src="./img/listenon_itunes.png" alt="ListenOnItunes" class="kep"></a>
+						<a href="https://deezer.page.link/HpLkxiAyA1T2kX536" target="_blank" class="listen keplink"><img src="./img/listenon_deezer.png" alt="ListenOnItunes" class="kep"></a>
+					</p></section>
+
+					<aside>
+						<h2>Mörcs</h2>
+						<p>Hamarosan...</p>
+					</aside>
+
+					<aside>
+						<h2>Időkapszula</h2>
+						<div class="fotorama"
+							data-width="85%" 
+							data-autoplay="5000" 
+							data-loop="true" 
+							data-shuffle="true" 
+							data-stopautoplayontouch="false"
+							data-fit="cover">
+							<img src="./img/koncert/konc11.webp" alt="Koncertkép" data-caption="Rocktogon, w The Exhibition<br>2019 03">
+							<img src="./img/koncert/konc12.webp" alt="Koncertkép" data-caption="Rocktogon, w The Exhibition<br>2019 03">
+							<img src="./img/koncert/konc21.webp" alt="Koncertkép" data-caption="Wonder Island<br>2019 06">
+							<img src="./img/koncert/konc22.webp" alt="Koncertkép" data-caption="Wonder Island<br>2019 06">
+							<img src="./img/koncert/konc31.webp" alt="Koncertkép" data-caption="Mika Tivadar Mulató, w Stikli<br>2019 12">
+							<img src="./img/koncert/konc32.webp" alt="Koncertkép" data-caption="Mika Tivadar Mulató, w Stikli<br>2019 12">
+							<img src="./img/koncert/konc41.webp" alt="Koncertkép" data-caption="Wonder Garden, w Cellar<br>2021 06">
+							<img src="./img/koncert/konc42.webp" alt="Koncertkép" data-caption="Wonder Garden, w Cellar<br>2021 06">
+							<img src="./img/koncert/konc51.webp" alt="Koncertkép" data-caption="Wonder Garden, w Stikli<br>2021 09">
+							<img src="./img/koncert/konc52.webp" alt="Koncertkép" data-caption="Wonder Garden, w Stikli<br>2021 09">
+							<img src="./img/koncert/konc61.webp" alt="Koncertkép" data-caption="Dürer Kert, w Butter Bros<br>2022 04">
+							<img src="./img/koncert/konc62.webp" alt="Koncertkép" data-caption="Dürer Kert, w Butter Bros<br>2022 04">
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<footer>
+			© LowBudget 2022
+			<a href="https://instagram.com/lowbudgetzenekar/" target="_blank" class="keplink">
+				<img src="./img/insta.png" alt="Instagram" class="social">
+			</a>
+			<a href="https://facebook.com/lowbudgetzenekar/" target="_blank" class="keplink">
+				<img src="./img/facebook.png" alt="Facebook" class="social">
+			</a>
+		</footer>
+	</BODY>
+</HTML>

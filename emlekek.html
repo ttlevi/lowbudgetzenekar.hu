@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+	<HEAD>
+		<link rel="stylesheet" href= "style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+		<meta name="author" content="Tahi-Tóth Levente">
+		<meta name ="description" content="A LowBudget zenekar hivatalos weboldala">
+
+		<title>LowBudget - Galéria</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicon/site.webmanifest">
+
+		<script src="./scripts.js"></script>
+
+		<script src="./jquery-3.6.0.js"></script>
+		<script src="./fotorama-4.6.4/fotorama.js"></script>
+		<link href="./fotorama-4.6.4/fotorama.css" rel="stylesheet">
+		
+	</HEAD>
+	<BODY>
+		<div class="container">
+			<div class="fej_container">
+				<div class="fejkep">
+					<div class="logobox">
+						<img src="./img/logo_white_transp.png" alt="LB logo" class="logo">
+					</div>
+					<div class="fejjobb">
+						<img src="./img/borito1.png" alt="Borítókép" class="borito">
+						<div class="lboff"><p>ZENEKAR</p></div>
+					</div>
+				</div>
+				<nav id="sticky_desk" class="nav_desk"> <!--kétféle nav menü van, a mobilos legördülés megoldása miatt-->
+					<ul>
+						<li><a href="index.html"><h2>Főutca</h2></a></li>
+						<li><a href="sztori.html"><h2>Sztori</h2></a></li>
+						<li><a href="muvek.html"><h2>Művek</h2></a></li>
+						<li><a class="active" href="#"><h2>Galéria</h2></a></li>
+						<li><a href="kontakt.html"><h2>Kontakt</h2></a></li>
+					</ul>
+				</nav>
+				<nav id="sticky_mob" class="nav_mob">
+					<input type="image" src="./img/hambicon.png" alt="Menü ikon" onclick="dropdown()" class="menugomb keplink">
+					<input type="image" src="./img/closeicon.png" alt="Menü ikon" onclick="dropdown()" class="menugomb close">
+					<ul>
+						<li><a href="index.html" class="hide"><h2>Főutca</h2></a></li>
+						<li><a href="sztori.html" class="hide"><h2>Sztori</h2></a></li>
+						<li><a href="muvek.html" class="hide"><h2>Művek</h2></a></li>
+						<li><a class="active" href="#"><h2>Galéria</h2></a></li>
+						<li><a href="kontakt.html" class="hide"><h2>Kontakt</h2></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="main_container" id="stickmargin_main">
+				<section><p class="listen" id="stickmargin_listen">
+					<a href="https://open.spotify.com/artist/0gATikxPRj3ZdB1cPZTkTL?si=pgB0ukLGQHOxYzDfkS9BPQ" target="_blank" class="listen keplink"><img src="./img/listenon_spotify.png" alt="ListenOnSpotify" class="kep"></a>
+					<a href="https://music.youtube.com/channel/UCQ5iiArx51McOYh9ngU0nqw" target="_blank" class="listen keplink"><img src="./img/listenon_youtube.png" alt="ListenOnYoutube" class="kep"></a>
+					<br>
+					<a href="https://music.apple.com/us/artist/lowbudget/1569014794" target="_blank" class="listen keplink"><img src="./img/listenon_itunes.png" alt="ListenOnItunes" class="kep"></a>
+					<a href="https://deezer.page.link/HpLkxiAyA1T2kX536" target="_blank" class="listen keplink"><img src="./img/listenon_deezer.png" alt="ListenOnItunes" class="kep"></a>
+				</p></section>
+
+				<div class="gal_disp_container">
+					<span onclick="this.parentElement.style.display='none'" class="galclose">&times;</span>
+					<img src="#" alt="Teljes kép" id="expandedImg" style="width:100%">
+					<div id="imgtext"></div>
+				</div>
+
+				<article class="aktual">
+					<h3 class="teljes">A38 Hajó, Irány a fedélzet! 2022 04</h3>
+					<div class="gal_container teljes">
+						<div class="kiemelt harmad">
+							<img class="kep" id="kiemeltkep4" src="./img/emlekek/2207a38/0.webp" alt="Kiemelt kép">
+						</div>
+						<div class="columns ketharmad">
+							<div class="column">
+								<img class="kep" src="./img/emlekek/2207a38/0.webp" alt="A38 Hajó, Irány a fedélzet! - 2022 07" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel4(this);">
+					  		</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2207a38/1.webp" alt="A38 Hajó, Irány a fedélzet! - 2022 07" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel4(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2207a38/2.webp" alt="A38 Hajó, Irány a fedélzet! - 2022 07" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel4(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2207a38/3.webp" alt="A38 Hajó, Irány a fedélzet! - 2022 07" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel4(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2207a38/4.webp" alt="A38 Hajó, Irány a fedélzet! - 2022 07" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel4(this);">
+							</div>
+							<div class="column">
+								<img class="kep" src="./img/emlekek/2207a38/5.webp" alt="A38 Hajó, Irány a fedélzet! - 2022 07" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel4(this);">
+					  		</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2207a38/6.webp" alt="A38 Hajó, Irány a fedélzet! - 2022 07" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel4(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2207a38/7.webp" alt="A38 Hajó, Irány a fedélzet! - 2022 07" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel4(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2207a38/8.webp" alt="A38 Hajó, Irány a fedélzet! - 2022 07" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel4(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2207a38/9.webp" alt="A38 Hajó, Irány a fedélzet! - 2022 07" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel4(this);">
+							</div>
+						</div>
+					</div>
+					
+					<h3 class="teljes">Dürer Kert, w Butter Bros 2022 04</h3>
+					<div class="gal_container teljes">
+						<div class="kiemelt harmad">
+							<img class="kep" id="kiemeltkep3" src="./img/emlekek/2204durer/0.webp" alt="Kiemelt kép">
+						</div>
+						<div class="columns ketharmad">
+							<div class="column">
+								<img class="kep" src="./img/emlekek/2204durer/0.webp" alt="Dürer Kert, w Butter Bros - 2022 04" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel3(this);">
+					  		</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2204durer/1.webp" alt="Dürer Kert, w Butter Bros - 2022 04" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel3(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2204durer/2.webp" alt="Dürer Kert, w Butter Bros - 2022 04" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel3(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2204durer/3.webp" alt="Dürer Kert, w Butter Bros - 2022 04" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel3(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2204durer/4.webp" alt="Dürer Kert, w Butter Bros - 2022 04" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel3(this);">
+							</div>
+							<div class="column">
+								<img class="kep" src="./img/emlekek/2204durer/5.webp" alt="Dürer Kert, w Butter Bros - 2022 04" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel3(this);">
+					  		</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2204durer/6.webp" alt="Dürer Kert, w Butter Bros - 2022 04" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel3(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2204durer/7.webp" alt="Dürer Kert, w Butter Bros - 2022 04" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel3(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2204durer/8.webp" alt="Dürer Kert, w Butter Bros - 2022 04" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel3(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2204durer/9.webp" alt="Dürer Kert, w Butter Bros - 2022 04" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel3(this);">
+							</div>
+						</div>
+					</div>
+
+					<h3 class="teljes">Wonder Garden, w Stikli 2021 09</h3>
+					<div class="gal_container teljes">
+						<div class="kiemelt harmad">
+							<img class="kep" id="kiemeltkep2" src="./img/emlekek/2109wonder/0.webp" alt="Kiemelt kép">
+						</div>
+						<div class="columns ketharmad">
+							<div class="column">
+								<img class="kep" src="./img/emlekek/2109wonder/0.webp" alt="Wonder Garden, w Stikli - 2021 09" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel2(this);">
+					  		</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2109wonder/1.webp" alt="Wonder Garden, w Stikli - 2021 09" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel2(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2109wonder/2.webp" alt="Wonder Garden, w Stikli - 2021 09" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel2(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2109wonder/3.webp" alt="Wonder Garden, w Stikli - 2021 09" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel2(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2109wonder/4.webp" alt="Wonder Garden, w Stikli - 2021 09" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel2(this);">
+							</div>
+							<div class="column">
+								<img class="kep" src="./img/emlekek/2109wonder/5.webp" alt="Wonder Garden, w Stikli - 2021 09" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel2(this);">
+					  		</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2109wonder/6.webp" alt="Wonder Garden, w Stikli - 2021 09" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel2(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2109wonder/7.webp" alt="Wonder Garden, w Stikli - 2021 09" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel2(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2109wonder/8.webp" alt="Wonder Garden, w Stikli - 2021 09" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel2(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2109wonder/9.webp" alt="Wonder Garden, w Stikli - 2021 09" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel2(this);">
+							</div>
+						</div>
+					</div>
+
+					<h3 class="teljes">Wonder Garden, w Cellar 2021 06</h3>
+					<div class="gal_container teljes">
+						<div class="kiemelt harmad">
+							<img class="kep" id="kiemeltkep1" src="./img/emlekek/2106wonder/0.webp" alt="Kiemelt kép">
+						</div>
+						<div class="columns ketharmad">
+							<div class="column">
+								<img class="kep" src="./img/emlekek/2106wonder/0.webp" alt="Wonder Garden, w Cellar - 2021 06" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel1(this);">
+					  		</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2106wonder/1.webp" alt="Wonder Garden, w Cellar - 2021 06" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel1(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2106wonder/2.webp" alt="Wonder Garden, w Cellar - 2021 06" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel1(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2106wonder/3.webp" alt="Wonder Garden, w Cellar - 2021 06" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel1(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2106wonder/4.webp" alt="Wonder Garden, w Cellar - 2021 06" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel1(this);">
+							</div>
+							<div class="column">
+								<img class="kep" src="./img/emlekek/2106wonder/5.webp" alt="Wonder Garden, w Cellar - 2021 06" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel1(this);">
+					  		</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2106wonder/6.webp" alt="Wonder Garden, w Cellar - 2021 06" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel1(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2106wonder/7.webp" alt="Wonder Garden, w Cellar - 2021 06" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel1(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2106wonder/8.webp" alt="Wonder Garden, w Cellar - 2021 06" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel1(this);">
+							</div>
+							<div class="column">
+							  	<img class="kep" src="./img/emlekek/2106wonder/9.webp" alt="Wonder Garden, w Cellar - 2021 06" style="width:100%" onclick="gallery(this);" onmouseover="kepkiemel1(this);">
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<div class="asideok">
+					<section><p class="listen">
+						<a href="https://open.spotify.com/artist/0gATikxPRj3ZdB1cPZTkTL?si=pgB0ukLGQHOxYzDfkS9BPQ" target="_blank" class="listen keplink"><img src="./img/listenon_spotify.png" alt="ListenOnSpotify" class="kep"></a>
+						<a href="https://music.youtube.com/channel/UCQ5iiArx51McOYh9ngU0nqw" target="_blank" class="listen keplink"><img src="./img/listenon_youtube.png" alt="ListenOnYoutube" class="kep"></a>
+						<br>
+						<a href="https://music.apple.com/us/artist/lowbudget/1569014794" target="_blank" class="listen keplink"><img src="./img/listenon_itunes.png" alt="ListenOnItunes" class="kep"></a>
+						<a href="https://deezer.page.link/HpLkxiAyA1T2kX536" target="_blank" class="listen keplink"><img src="./img/listenon_deezer.png" alt="ListenOnItunes" class="kep"></a>
+					</p></section>
+
+					<aside>
+						<h2>Mozgókép</h2>
+						<p style="text-align: center;">
+						<iframe class="kep" width="90%" height="200px" src="https://www.youtube.com/embed/_mt6eHR3uEw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						WonderGarden koncert, 2021 09<br>// After movie by ContentWork Pr.</p>
+					</aside>
+					
+					<aside>
+						<h2>Alkotók</h2>
+						<ul>
+							<li><span class="ki">Urbancsek Jancsi</span> - a leghűségesebb fotósunk (és alkalmi DJ-nk), kövesd te is <a href="https://www.instagram.com/urban_photo_and_videography/" target="_blank">Instagramon</a>!</li>
+							<li><span class="ki">ContentWork Productions</span> - ha bármilyen dokumentációra, közvetítésre keresel csapatot, <a href="http://contentwork.hu" target="_blank">itt találod</a> a weboldalukat!</li>
+							<li>A <span class="ki">Zenefesto</span> is nagyot alkotott nálunk a Margit-szigeten, ha zenekari fotóst keresel, vele nem nyúlhatsz mellé! <a href="https://www.facebook.com/zenefesto.hu" target="_blank">Itt eléred</a> a Facebook oldalát!</li>
+						</ul>
+					</aside>
+					
+				</div>
+			</div>
+		</div>
+		<footer>
+			© LowBudget 2022
+			<a href="https://instagram.com/lowbudgetzenekar/" target="_blank" class="keplink">
+				<img src="./img/insta.png" alt="Instagram" class="social">
+			</a>
+			<a href="https://facebook.com/lowbudgetzenekar/" target="_blank" class="keplink">
+				<img src="./img/facebook.png" alt="Facebook" class="social">
+			</a>
+		</footer>
+	</BODY>
+</HTML>

@@ -1,0 +1,29 @@
+Tahi-Tóth Levente - 2022 05
+
+http://web.uni-corvinus.hu/~gj2gq2/index.html
+
+Az oldalon szereplő képek mind sajátok. A szövegeket is én írtam saját kezűleg.
+
+
+----Leírás----
+Weboldalam egy zenekar (pontosabban az én, létező zenekarom) hivatalos honlapjának készült. Tartalmaz főoldalt hírekkel, az alakulás rövid történetét, egy oldalt eddig kiadott zenéinknek, képgalériát és egy kontakt oldalt visszajelző felülettel és tagsági bejelentkezéssel (ami egy esetleges back-endre vihetne tovább).
+
+----JavaScript----
+Részben saját JS kódom minden oldalon szerepel, egy legördülő "hamburger" menü formájában, melyhez a W3Schools-ról is gyűjtöttem ötleteket.
+forrás: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar
+
+Második részben saját kódom szintén minden oldalon szerepel, azt oldja meg, hogy a menü, mely a fejléc alján szerepel, az oldal tetejének elérésekor "fixed" display tulajdonságot kapjon, tehát maradjon a lap tetején. Szintén merítettem ötleteket, de a beállítás egyedi megoldást igényelt.
+forrás: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onscroll2
+
+Egyik teljesen saját kódom az emlekek.html-hez kötött, célja, hogy ha az egeret egy adott blokk adott képe fölé visszük, az a kép jelenjen meg az adott blokk kiemelt helyén.
+
+A kis képekre kattintva pedig az adott kép jelenik meg a képernyőn nagyban, ez utóbbihoz szintén használtam némi segítséget. A css file ide tartozó részének a forrása is az alábbi.
+forrás: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tab_img_gallery
+
+Másik teljesen saját kódom a "kontakt.html" formjának értékelési pontszámait adja össze és jeleníti meg.
+
+----Fontok----
+A style.css tetején található a fontok hivatkozása. A fejléc "ZENEKAR" szava egyedül Piedra-Regular típusú, a további tartalom teljes egészében Mitr-Light típus. Ezeket "focim.ttf", illetve "tartalom.ttf"-re neveztem át a könnyebb változtathatóság és átláthatóság érdekében.
+
+----HTML5-ös űrlapelemek----
+Egyedül a "kontakt.html"-en szerepelnek űrlapelemek, HTML5-ös ezek közül egy color és egy email mező.

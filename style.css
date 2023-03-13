@@ -1,0 +1,598 @@
+/* ################### M A I N ################### */
+
+/*FONT*/
+
+@font-face {font-family: tartalom; src: url(./fonts/tartalom.ttf); }
+@font-face {font-family: fejlec; src: url(./fonts/focim.ttf); }
+
+/*ALAP*/
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    color:#ffffff;
+}
+
+body{
+    background: linear-gradient(180deg,#000000,#000000,#333333,#333333,#333333,#333333) no-repeat center center fixed; 
+    font-family: tartalom, sans-serif;
+    padding:0px;
+    margin:0px;
+    text-align: justify;
+}
+
+header{
+    text-align: center;
+}
+
+footer{
+    color:#ffffff;
+    padding: 10px;
+    background-color: #000000c7;
+    position: fixed;
+    height: 45px;
+    bottom: 0;
+    width: 100%;
+}
+
+/*SZÖVEG TAGEK*/
+
+h2{
+    text-align: center;
+    text-indent: 5%;
+    background-color: #DF1216;
+    color: #ffffff;
+    font-weight: 100;
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+    font-variant: small-caps;
+    color: #ffffff;
+    letter-spacing: 5px;
+    line-height: 40px;
+    font-size: 18pt;
+    border-radius: 8pt;
+}
+
+h3{
+    text-align: center;
+    letter-spacing: 5px;
+    background-color: #5c5c5c;
+    font-weight: 100;
+    padding-left: 10px;
+    border-radius: 8pt;
+}
+
+a{
+    color: #c6c6c6;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+hr{
+    height: 2px;
+}
+
+/*FORMÁZÁS OSZTÁLYOK*/
+
+.lboff{
+    color:#ffffff;
+    text-align: center;
+    letter-spacing: 7vw;
+    line-height: 150%;
+    font-family: fejlec, sans-serif;
+    font-size: 4vw;
+    padding-left: 4vw;
+    /*background: -webkit-linear-gradient(270deg,#810000, #420000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+}
+
+.kep {
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px #2a2a2a;
+}
+
+.aktual > div > img.kep {
+    width: 100%;
+}
+
+.findus{
+    width: 46%;
+    margin: 1%;
+}
+
+.keplink img:hover, input.keplink:hover{
+    transform: scale(1.05);
+}
+
+.logo, .borito{
+    width: 100%;
+    object-fit: contain;
+}
+
+.logo{
+    width: 70%;
+    margin-left: 15%;
+}
+
+.social{
+    width: 20px;
+    float: right;
+    margin-left: 10px;
+}
+
+.contact{
+    float: right;
+    width: 25px;
+    margin: 5%;
+}
+
+table{
+    margin: 3%;
+}
+
+p.listen{
+    text-align: center;
+    margin-bottom:0%;
+}
+
+a.listen > img{
+    margin:  1%;
+    width: 150px;
+}
+
+.tagsagi{
+    width: 30px;
+    float: inline-end;
+    margin: 5px;
+}
+
+.tagsagi_be{
+    background-color: #810000;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+
+.ki{
+    color: #DF1216;
+    font-weight: bold;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+}
+
+/*NAV MENU*/
+
+.sticky{
+    position:fixed;
+    top:0;
+    z-index: 777;
+    background-color: #5b5b5b;
+    border-radius: 0px;
+}
+
+.marginplus{
+    margin-top: 53px;
+}
+
+.menugomb{
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+}
+
+.menugomb.close{
+    background-color: #5c5c5c;
+    display: none;
+}
+
+.hide{
+    display: none;
+    background-color: #5b5b5b;
+}
+
+.nav_desk{
+    display: none;
+}
+
+nav{
+    flex-basis: 100%;
+    padding:0px;
+    margin: 0px;
+    width:100%;
+    height: 40px;
+    background-color: transparent/*#5c5c5c*/;
+}
+
+nav ul {
+    display: flex;
+	flex-direction: column;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+
+nav ul li {
+    justify-content: space-between;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+nav li a h2 {
+    background-color: transparent/*#5c5c5c*/;
+    text-align: center;
+    text-indent: 0px;
+}
+
+nav ul li a.active h2{
+    background-color: #DF1216;
+    color: #ffffff;
+}
+
+nav li a:hover h2{
+    font-weight: normal;
+    color: #ffffff;
+    background-color: #9f0f11;
+}
+
+/*FORM*/
+label{
+    font-style: italic;
+    line-height: 150%;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.form > *{
+    flex-basis: 100%;
+    padding: 1%;
+}
+
+input{
+    margin: 1%;
+}
+
+.btn{
+    font-family: tartalom, sans-serif;
+    width: 100%;
+    height: 40px;
+    background-color:#9f0f11;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 10px;
+}
+.btn:hover{
+    transform: scale(0.98);
+}
+
+
+/*BOXOK*/
+.container{
+    min-height: calc(100%-45px);
+    padding-bottom: 45px;
+}
+
+.fej_container, .asideok, .lboff>* {
+    margin: 0%;
+}
+
+.aktual > div{
+   padding: 1%; 
+}
+
+.container, .main_container, .asideok{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;}  
+
+.fej_container{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    background-color: transparent;
+    width:100%;
+}
+.fejkep{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+}
+.logobox{
+    display: flex;
+    flex-basis: 50%;
+}
+.fejjobb{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 50%;
+}
+.borito{
+    flex-basis: 80%;
+    object-fit: cover;
+}
+.lboff{
+    flex-basis: 20%;
+}
+nav{
+    flex-basis: 100%;
+}
+
+section{
+    flex-basis: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+section > p.listen{
+    flex-direction: row;
+}
+
+.asideok{
+    flex-wrap: nowrap;
+}
+
+.asideok > section{
+    display: none;
+}
+
+article, aside, section{
+    padding: 10px;
+    background-color: transparent;
+}
+
+article.aktual{
+    align-content: flex-start;
+}
+
+.tagok{
+    height: 150%;
+}
+
+/* ################### G A L É R I A ################### */
+
+/* ITT KEZDŐDIK AZ ÁTVETT RÉSZ FORMÁZÁSA */
+
+.gal_container, .columns{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.columns{
+    flex-basis: 100%;
+}
+
+.kiemelt > img{
+    width: 100%;
+    transform: scale(0.95);
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    line-height: 0px;
+    flex-basis: 50%;
+    padding: 0.5%;
+    margin: 0%;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.column img:hover {
+    opacity: 1;
+    
+}
+
+/* The expanding image container */
+.gal_disp_container {
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #000000c7;
+    z-index: 888;
+    display: none;
+}
+
+#expandedImg{
+    height: 100%;
+    padding: 5%;
+    object-fit: contain;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    line-height: 0%;
+}
+
+/* Closable button inside the expanded image */
+.galclose {
+    position: absolute;
+    line-height: 0%;
+    top: 20px;
+    right: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* IDÁIG TART AZ ÁTVETT RÉSZ FORMÁZÁSA */
+
+.fotorama{
+    padding: 5% 0% 0% 13%;
+}
+
+/* ################# R E S Z P O N Z I V I T Á S ################# */
+
+@media all and (min-width: 600px) {
+    /*tablet*/
+    h2, h3{
+        text-align: left;
+    }
+    .marginplus{
+        margin-top: 40px;
+    }
+    .nav_desk{
+        display: block;
+    }
+    .nav_mob{
+        display: none;
+    }
+    nav ul{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+	nav ul li {
+		flex-basis: 20%;
+	}
+    .main_container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main_container > section > p > br{
+        display: none;
+    }
+    .main_container > section > p.listen > a > img{
+        margin:  1%;
+        width: 20vw;
+    }
+    .main_container > article{
+        flex-basis: 100%;
+    }
+    .asideok{
+        flex-direction: row;
+    }
+    .asideok > aside{
+        flex-basis: 50%;
+    }
+
+    /*GALÉRIA*/
+    .kiemelt{
+        flex-basis: 50%;
+    }
+    .columns{
+        flex-basis: 50%;
+    }
+    .column{
+        flex-basis: 25%;
+    }
+}
+
+@media all and (min-width: 768px) {
+    /*desktop*/
+    .fejjobb{
+        flex-direction: row;
+        flex-basis: 88%;
+        object-fit: cover;
+    }
+    .logobox{
+        flex-basis: 12%;
+        object-fit: cover;
+    }
+    .logo,.borito{
+        height: 120px;
+    }
+    .logo{
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    .borito{
+        order: 2;
+        flex-basis: 50%;
+    }
+    .lboff{
+        order: 1;
+        flex-basis: 50%;
+        letter-spacing: 4vw;
+        font-size: 3vw;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .main_container.asideok > section > p > br{
+        display: block;
+    }
+    .main_container > article.aktual{
+        flex-basis: 75%;
+    }
+    .main_container > section{
+        display: none;
+    }
+    .asideok > section{
+        display: block;
+        flex-basis: 20%;
+    }
+    .main_container > .asideok{
+        flex-basis: 25%;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+    .asideok > aside, .asideok > section{
+        flex-basis: auto;
+    }
+    article > .kep{
+        float: left;
+        width: 0%;
+    }
+    article.aktual{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .fel{
+        flex-basis: 50%;
+    }
+    .harmad{
+        flex-basis: 33.33%;
+    }
+    .ketharmad{
+        flex-basis: 66.66%;
+    }
+    .teljes{
+        flex-basis: 100%;
+    }
+    /*GALÉRIA*/
+    .column {
+        flex-basis: 20%;
+    }
+}
+
+@media all and (min-width: 1500px) {
+    /*widescreen*/
+    .negyed{
+        flex-basis: 25%;
+    }
+}
+

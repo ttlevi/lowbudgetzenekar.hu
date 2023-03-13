@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+	<HEAD>
+		<link rel="stylesheet" href= "style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+		<meta name="author" content="Tahi-Tóth Levente">
+		<meta name ="description" content="A LowBudget zenekar hivatalos weboldala">
+
+		<title>LowBudget - Kontakt</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicon/site.webmanifest">
+		
+		<script src="./scripts.js"></script>
+
+		<script src="./jquery-3.6.0.js"></script>
+
+		<script src="./fotorama-4.6.4/fotorama.js"></script>
+		<link href="./fotorama-4.6.4/fotorama.css" rel="stylesheet">
+
+		<!--
+		<script src="./jquery-validation-1.19.3/dist/jquery.validate.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#taglogin").validate({
+					rules:{
+						felhnev: {
+							required: true
+						},
+						jelszo: {
+							required: true,
+							minlength: 8
+						}
+					},
+					messages:{
+						felhnev: {
+							required: "Add meg a felhasználóneved!"
+						},
+						jelszo: {
+							required: "Add meg a jelszavad!",
+							minlength: "A jelszó min. 8 karakteres kell legyen!"
+						}
+					}
+				});
+
+				$("#visszajelzes").validate({
+					rules:{
+						email: {
+							email: true
+						},
+						elfogad: {
+							required: true
+						},
+						konci:{
+							required: true
+						}
+					},
+					messages:{
+						email: {
+							email: "<br>Valós formátumú e-mail címet adj meg!"
+						},
+						elfogad: {
+							required: "Kérlek, fogadd el a feltételeket!"
+						},
+						konci:{
+							required: "Jelölj meg valamit!"
+						}
+					}
+				});
+			});
+		</script>
+		
+
+		<style>
+			label.error {
+			color: #ffffff76;}
+		</style>
+		-->
+
+	</HEAD>
+	<BODY onload="osszead()"> <!--ezen a lapon meg kell hívni alapból az összeadás eseményt-->
+		<div class="container">
+			<div class="fej_container">
+				<div class="fejkep">
+					<div class="logobox">
+						<img src="./img/logo_white_transp.png" alt="LB logo" class="logo">
+					</div>
+					<div class="fejjobb">
+						<img src="./img/borito1.png" alt="Borítókép" class="borito">
+						<div class="lboff"><p>ZENEKAR</p></div>
+					</div>
+				</div>
+				<nav id="sticky_desk" class="nav_desk"> <!--kétféle nav menü van, a mobilos legördülés megoldása miatt-->
+					<ul>
+						<li><a href="index.html"><h2>Főutca</h2></a></li>
+						<li><a href="sztori.html"><h2>Sztori</h2></a></li>
+						<li><a href="muvek.html"><h2>Művek</h2></a></li>
+						<li><a href="emlekek.html"><h2>Galéria</h2></a></li>
+						<li><a class="active" href="#"><h2>Kontakt</h2></a></li>
+					</ul>
+				</nav>
+				<nav id="sticky_mob" class="nav_mob">
+					<input type="image" src="./img/hambicon.png" alt="Menü ikon" onclick="dropdown()" class="menugomb keplink">
+					<input type="image" src="./img/closeicon.png" alt="Menü ikon" onclick="dropdown()" class="menugomb close">
+					<ul>
+						<li><a href="index.html" class="hide"><h2>Főutca</h2></a></li>
+						<li><a href="sztori.html" class="hide"><h2>Sztori</h2></a></li>
+						<li><a href="muvek.html" class="hide"><h2>Művek</h2></a></li>
+						<li><a href="emlekek.html" class="hide"><h2>Galéria</h2></a></li>
+						<li><a class="active" href="#"><h2>Kontakt</h2></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="main_container" id="stickmargin_main">
+				<section><p class="listen" id="stickmargin_listen">
+					<a href="https://open.spotify.com/artist/0gATikxPRj3ZdB1cPZTkTL?si=pgB0ukLGQHOxYzDfkS9BPQ" target="_blank" class="listen keplink"><img src="./img/listenon_spotify.png" alt="ListenOnSpotify" class="kep"></a>
+					<a href="https://music.youtube.com/channel/UCQ5iiArx51McOYh9ngU0nqw" target="_blank" class="listen keplink"><img src="./img/listenon_youtube.png" alt="ListenOnYoutube" class="kep"></a>
+					<br>
+					<a href="https://music.apple.com/us/artist/lowbudget/1569014794" target="_blank" class="listen keplink"><img src="./img/listenon_itunes.png" alt="ListenOnItunes" class="kep"></a>
+					<a href="https://deezer.page.link/HpLkxiAyA1T2kX536" target="_blank" class="listen keplink"><img src="./img/listenon_deezer.png" alt="ListenOnItunes" class="kep"></a>
+				</p></section>
+
+				<article class="aktual">
+					<h3 class="teljes">Keress, írj, kövess!</h3>
+					<div class="fel">
+						<p><a href="https://facebook.com/lowbudgetzenekar/" target="_blank" class="keplink"><img class="kep findus" src="./img/kontakt/face.png" alt="Facebook"></a>
+						<a href="https://instagram.com/lowbudgetzenekar/" target="_blank" class="keplink"><img class="kep findus" src="./img/kontakt/insta.png" alt="Instagram"></a></p>
+					</div>
+					<div class="fel">
+						<table>
+							<tr>
+								<td><img class="contact" src="./img/kontakt/gmail.png" alt="Gmail"></td>
+								<td>lowbudgetzenekar@gmail.com</td>
+							</tr>
+							<tr>
+								<td><img class="contact" src="./img/kontakt/phone.png" alt="Phone"></td>
+								<td>+36 30 476 9122</td>
+							</tr>
+						</table>
+					</div>
+					
+					<!--
+					<h3 class="teljes">Értékelj minket!</h3>
+					<p class="teljes">Segíts visszajelezni nekünk és a helyszíneknek, hogy egyre jobbak és jobbak lehessünk!</p>
+					<form id="visszajelzes" novalidate class="teljes" method="post" action="http://szamtud.uni-corvinus.hu/~blang/receive.php">
+					<div class="form teljes">
+						<div class="fel"><strong>Melyik koncertünkön voltál legutóbb?</strong><br>
+							<label>Dürer Kert, w Butter Bros - 2022 04<input type="radio" name="konci" value="durer2204"></label><br>
+							<label>Wonder Garden, w Cellar - 2021 09<input type="radio" name="konci" value="wonder2109"></label><br>
+							<label>Wonder Garden, w Stikli - 2021 06<input type="radio" name="konci" value="wonder2106"></label><br>
+							<label>A fentiek egyikén sem voltam.<input type="radio" name="konci" value="none"></label>
+						</div>
+
+						<div class="fel"><p><strong>Kit ismersz a zenekarból?</strong><br>
+							<label><input type="checkbox" name="ismeri_laci" value="Igaz">Laci</label>
+							<label><input type="checkbox" name="ismeri_tahi" value="Igaz">Tahi</label>
+							<label><input type="checkbox" name="ismeri_levo" value="Igaz">Levó</label>
+							<label><input type="checkbox" name="ismeri_kris" value="Igaz">Kris</label>
+							<label><input type="checkbox" name="ismeri_erik" value="Igaz">Erik</label>
+							<label><input type="checkbox" name="ismeri_robi" value="Igaz">Robi</label>
+							<label><input type="checkbox" name="ismeri_senki" value="Igaz">Senkit</label>
+						</p></div>
+
+						<div class="fel"><p><strong>Ha voltál, értékeld a fent megjelölt koncertet!</strong><br>
+							<label>Milyen volt a bulihangulat?
+								<select size="1" name="buli" class="ertekeles" onchange="osszead()">
+									<option value="5">5 - a legjobb</option>
+									<option value="4">4 - király</option>
+									<option value="3">3 - átlag, de azért oké</option>
+									<option value="2">2 - volt már jobb is</option>
+									<option value="1">1 - nem volt jó</option>
+									<option value="0">nem nyilatkozom</option>
+								</select>
+							</label><br>
+							<label>Milyen volt a hangosítás?
+								<select size="1" name="hang" class="ertekeles" onchange="osszead()">
+									<option value="5">5 - a legjobb</option>
+									<option value="4">4 - király</option>
+									<option value="3">3 - átlag, de azért oké</option>
+									<option value="2">2 - volt már jobb is</option>
+									<option value="1">1 - nem volt jó</option>
+									<option value="0">nem nyilatkozom</option>
+								</select>
+							</label><br>
+							<label>Milyen volt a jegyár?
+								<select size="1" name="jegy" class="ertekeles" onchange="osszead()">
+									<option value="5">5 - a legjobb</option>
+									<option value="4">4 - király</option>
+									<option value="3">3 - átlag, de azért oké</option>
+									<option value="2">2 - volt már jobb is</option>
+									<option value="1">1 - nem volt jó</option>
+									<option value="0">nem nyilatkozom</option>
+								</select>
+							</label><br>
+							<label>Milyen volt az italár?
+								<select size="1" name="ital" class="ertekeles" onchange="osszead()">
+									<option value="5">5 - a legjobb</option>
+									<option value="4">4 - király</option>
+									<option value="3">3 - átlag, de azért oké</option>
+									<option value="2">2 - volt már jobb is</option>
+									<option value="1">1 - nem volt jó</option>
+									<option value="0">nem nyilatkozom</option>
+								</select>
+							</label><br>
+							<label>Milyen volt a marketing kommunikáció?
+								<select size="1" name="marketing" class="ertekeles" onchange="osszead()">
+									<option value="5">5 - a legjobb</option>
+									<option value="4">4 - király</option>
+									<option value="3">3 - átlag, de azért oké</option>
+									<option value="2">2 - volt már jobb is</option>
+									<option value="1">1 - nem volt jó</option>
+									<option value="0">nem nyilatkozom</option>
+								</select>
+							</label>
+							<p>Az összpontszámod: <span id="osszeg"></span>.</p>
+						</p></div>
+
+						<div class="fel"><p><strong>Részletezd az észrevételeid!</strong><br>
+							<label><textarea name="visszajelzes" rows="5" style="width: 100%;"></textarea></label>
+						</div>
+
+						<div class="fel">
+							<p><strong>Kedvenc színed, amiből bármikor szívesen hordanál egy LowBudget pólót :D</strong><br>
+							<label>Válaszd ki a színt: <input type="color" name="poloszin"></label>
+						</div>
+
+						<div class="fel">
+							<p><strong>Hogy elérhessünk, ha különös bánat vagy épp öröm ért:</strong><br>
+							<label>E-mail címed: <input id="email" type="email" name="email"></label><br>
+							<label>Elfogadom a feltételeket: <input id="elfogad" type="checkbox" name="elfogad"></label></p>
+						</div>
+						<div class="teljes"><input class="btn kep" type="submit" value="Elküldöm"></div>
+					</div>
+					</form>
+					-->
+				
+				</article>
+
+				<div class="asideok">
+					<section><p class="listen">
+						<a href="https://open.spotify.com/artist/0gATikxPRj3ZdB1cPZTkTL?si=pgB0ukLGQHOxYzDfkS9BPQ" target="_blank" class="listen keplink"><img src="./img/listenon_spotify.png" alt="ListenOnSpotify" class="kep"></a>
+						<a href="https://music.youtube.com/channel/UCQ5iiArx51McOYh9ngU0nqw" target="_blank" class="listen keplink"><img src="./img/listenon_youtube.png" alt="ListenOnYoutube" class="kep"></a>
+						<br>
+						<a href="https://music.apple.com/us/artist/lowbudget/1569014794" target="_blank" class="listen keplink"><img src="./img/listenon_itunes.png" alt="ListenOnItunes" class="kep"></a>
+						<a href="https://deezer.page.link/HpLkxiAyA1T2kX536" target="_blank" class="listen keplink"><img src="./img/listenon_deezer.png" alt="ListenOnItunes" class="kep"></a>
+					</p></section>
+
+					<!--
+					<aside>
+						<h2>Tag login</h2>
+						<form id="taglogin" novalidate method="post" action="http://szamtud.uni-corvinus.hu/~blang/receive.php">
+						<p>
+							<label><input type="text" name="felhnev" id="felhnev" style="width: 100%;" placeholder="Felhasználónév"><br></label>
+							<label><input type="password" name="jelszo" id="jelszo" style="width: 100%;" placeholder="Jelszó"><br></label>
+							<input class="btn kep" type="submit" style="width: 100%;" value="Bejelentkezés">
+						</p></form>
+					</aside>
+					-->
+
+					<aside>
+						<h2>Technika</h2>
+						<ul>
+							<li>A zenekar technikai ridere (.pdf) letölthető <a href="./docs/LowBudget_Rider.pdf	">innen</a>.</li>
+							<li>A zenekar grafikai press csomagja (.zip) letölthető <a href="./docs/LowBudget_Press.zip">innen</a>.</li>
+						</ul>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<footer>
+			© LowBudget 2022
+			<a href="https://instagram.com/lowbudgetzenekar/" target="_blank" class="keplink">
+				<img src="./img/insta.png" alt="Instagram" class="social">
+			</a>
+			<a href="https://facebook.com/lowbudgetzenekar/" target="_blank" class="keplink">
+				<img src="./img/facebook.png" alt="Facebook" class="social">
+			</a>
+		</footer>
+	</BODY>
+</HTML>

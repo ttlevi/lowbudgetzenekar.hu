@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+	<HEAD>
+		<link rel="stylesheet" href= "style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+		<meta name="author" content="Tahi-Tóth Levente">
+		<meta name ="description" content="A LowBudget zenekar hivatalos weboldala">
+
+		<title>LowBudget - Főutca</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicon/site.webmanifest">
+
+		<script src="./scripts.js"></script>
+
+		<script src="./jquery-3.6.0.js"></script>
+		<script src="./fotorama-4.6.4/fotorama.js"></script>
+		<link href="./fotorama-4.6.4/fotorama.css" rel="stylesheet">
+	</HEAD>
+	<BODY>
+		<div class="container">
+			<div class="fej_container">
+				<div class="fejkep">
+					<div class="logobox">
+						<img src="./img/logo_white_transp.png" alt="LB logo" class="logo">
+					</div>
+					<div class="fejjobb">
+						<img src="./img/borito1.png" alt="Borítókép" class="borito">
+						<div class="lboff"><p>ZENEKAR</p></div>
+					</div>
+				</div>
+				<nav id="sticky_desk" class="nav_desk"> <!--kétféle nav menü van, a mobilos legördülés megoldása miatt-->
+					<ul>
+						<li><a class="active" href="#"><h2>Főutca</h2></a></li>
+						<li><a href="sztori.html"><h2>Sztori</h2></a></li>
+						<li><a href="muvek.html"><h2>Művek</h2></a></li>
+						<li><a href="emlekek.html"><h2>Galéria</h2></a></li>
+						<li><a href="kontakt.html"><h2>Kontakt</h2></a></li>
+					</ul>
+				</nav>
+				<nav id="sticky_mob" class="nav_mob">
+					<input type="image" src="./img/hambicon.png" alt="Menü ikon" onclick="dropdown()" class="menugomb keplink">
+					<input type="image" src="./img/closeicon.png" alt="Menü ikon" onclick="dropdown()" class="menugomb close">
+					<ul>
+						<li><a class="active" href="#"><h2>Főutca</h2></a></li>
+						<li><a href="sztori.html" class="hide"><h2>Sztori</h2></a></li>
+						<li><a href="muvek.html" class="hide"><h2>Művek</h2></a></li>
+						<li><a href="emlekek.html" class="hide"><h2>Galéria</h2></a></li>
+						<li><a href="kontakt.html" class="hide"><h2>Kontakt</h2></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="main_container" id="stickmargin_main">
+				<section><p class="listen" id="stickmargin_listen">
+					<a href="https://open.spotify.com/artist/0gATikxPRj3ZdB1cPZTkTL?si=pgB0ukLGQHOxYzDfkS9BPQ" target="_blank" class="listen keplink"><img src="./img/listenon_spotify.png" alt="ListenOnSpotify" class="kep"></a>
+					<a href="https://music.youtube.com/channel/UCQ5iiArx51McOYh9ngU0nqw" target="_blank" class="listen keplink"><img src="./img/listenon_youtube.png" alt="ListenOnYoutube" class="kep"></a>
+					<br>
+					<a href="https://music.apple.com/us/artist/lowbudget/1569014794" target="_blank" class="listen keplink"><img src="./img/listenon_itunes.png" alt="ListenOnItunes" class="kep"></a>
+					<a href="https://deezer.page.link/HpLkxiAyA1T2kX536" target="_blank" class="listen keplink"><img src="./img/listenon_deezer.png" alt="ListenOnItunes" class="kep"></a>
+				</p></section>
+
+				<article class="aktual">
+					<h3 class="teljes">Koncert!</h3>
+					<p class="teljes">
+						Április 19.-én a Dürer Kert színpadán a Küszöb zenekarral karöltve lépünk színpadra!
+						<br><br>A Küszöb egy csak saját, magyar nyelvű számokat játszó, feltörekvő együttes folk-rockos, pop-rockos, alternatív irányultsággal, izgalmas hangszereléssel (hegedű, koboz, trombita, klarinét). "Ez az egzisztencialista pop-rock, ez vagyunk mi."
+						<br><br>Aki pedig minket ismer (vagy épp idetévedt az oldalra), pontosan tudja mire számíthat.
+					</p>
+					<div class="harmad">
+						<img src="./img/index/akt1.webp" alt="Aktuális" class="kep">
+					</div>
+					<p class="harmad">
+						<!--
+						Elővétel: 2000 Ft | Helyszín: 2500 Ft<br><br><a href="https://tixa.hu/low-budget-durer-kert" target="_blank" class="btn kep">Jegyek itt!</a><br><br>Ott tala!
+						-->
+						További infók hamarosan! Stay tuned!
+					</p>
+					<p class="harmad">
+						<!--egyéb infók majd ide-->
+					</p>
+
+					<h3 class="teljes">Rólunk</h3>
+					<div class="fel">
+						<video src="./img/index/intro.mp4" width="100%" class="kep" autoplay muted loop controls></video>
+					</div>
+					<p class="fel">
+						Ez a zenekar régóta létezik már, mégis olyan, mint egy kisgyermek, aki nem csinál még sok hasznos dolgot, de ha felébred, mindenkinek a lelkébe egy kis boldogságot csöppent, és az emberek egy pillanatra elfelejthetik, hogy rohan az idő...<br><br>Minket ti neveltek. Veletek növünk fel. Így érik meg ez a csoda. Mi pedig voltunk, vagyunk és maradunk.
+					</p>
+				</article>
+
+				<div class="asideok">
+					<section><p class="listen">
+						<a href="https://open.spotify.com/artist/0gATikxPRj3ZdB1cPZTkTL?si=pgB0ukLGQHOxYzDfkS9BPQ" target="_blank" class="listen keplink"><img src="./img/listenon_spotify.png" alt="ListenOnSpotify" class="kep"></a>
+						<a href="https://music.youtube.com/channel/UCQ5iiArx51McOYh9ngU0nqw" target="_blank" class="listen keplink"><img src="./img/listenon_youtube.png" alt="ListenOnYoutube" class="kep"></a>
+						<br>
+						<a href="https://music.apple.com/us/artist/lowbudget/1569014794" target="_blank" class="listen keplink"><img src="./img/listenon_itunes.png" alt="ListenOnItunes" class="kep"></a>
+						<a href="https://deezer.page.link/HpLkxiAyA1T2kX536" target="_blank" class="listen keplink"><img src="./img/listenon_deezer.png" alt="ListenOnItunes" class="kep"></a>
+					</p></section>
+
+					<aside>
+						<h2>LényegES!</h2>
+						<ul>
+							<li>Koncertjeinken már <span class="ki">négy új dalunk</span> is hallható! Közeleg a lemez?(!)</li>
+							<li><span class="ki">Július 3.</span>-án az <span class="ki">A38 Hajóra</span> szerveztünk nektek egy nyári 	minifesztivált. És mekkora buli volt! Képek a galáriában!</li>
+							<li>Többek között a 2021 szeptemberi koncertünk <span class="ki">aftermovie</span>-ja is felkerült a YouTube csatornánkra. És jön még! Köszönjük ContentWork Productions! Check <a href="https://www.youtube.com/watch?v=_mt6eHR3uEw" target="_blank">itt!</a></li>
+						</ul>
+						<img src="./img/index/a38.png" alt="A38" class="kep" style="width: 40%; margin-left: 10%;">
+						<img src="./img/index/cwp.jpg" alt="CWP" class="kep" style="width: 40%;">
+					</aside>
+
+					<aside>
+						<h2>Ez vagyunk</h2>
+						<div class="fotorama"
+						data-width="85%" 
+						data-autoplay="5000" 
+						data-loop="true" 
+						data-shuffle="true" 
+						data-stopautoplayontouch="false"
+						data-fit="cover">
+							<img src="./img/index/tagok/laci.webp" alt="Laci" data-caption="Laci, énekes">
+							<img src="./img/index/tagok/tahi.webp" alt="Tahi" data-caption="Tahi, gitáros">
+							<img src="./img/index/tagok/levo.webp" alt="Levó" data-caption="Levó, gitáros">
+							<img src="./img/index/tagok/erik.webp" alt="Erik" data-caption="Erik, billentyűs">
+							<img src="./img/index/tagok/robi.webp" alt="Robi" data-caption="Robi, basszer">
+							<img src="./img/index/tagok/kris.webp" alt="Kris" data-caption="Kris, dobos">
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<footer>
+			© LowBudget 2022
+			<a href="https://instagram.com/lowbudgetzenekar/" target="_blank" class="keplink">
+				<img src="./img/insta.png" alt="Instagram" class="social">
+			</a>
+			<a href="https://facebook.com/lowbudgetzenekar/" target="_blank" class="keplink">
+				<img src="./img/facebook.png" alt="Facebook" class="social">
+			</a>
+		</footer>
+	</BODY>
+</HTML>
