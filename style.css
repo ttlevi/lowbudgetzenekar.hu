@@ -177,6 +177,10 @@ a.listen > img{
     margin-right: 10px;
 }
 
+.visitors > a{
+    color: transparent;
+}
+
 /*NAV MENU*/
 
 .sticky{
