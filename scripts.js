@@ -80,6 +80,11 @@ function kepkiemel4(imgs) {
     kiemelni.src = imgs.src;
 }
 
+function kepkiemel5(imgs) {
+    var kiemelni = document.getElementById("kiemeltkep5")
+    kiemelni.src = imgs.src;
+}
+
 //űrlap értékelések összeadása - saját fejlesztés
 function osszead(){
     var ossz=0;
